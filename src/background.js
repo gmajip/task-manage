@@ -15,6 +15,12 @@ async function createWindow() {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    backgroundColor: "#2f3241",
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#2f3241',
+      symbolColor: '#74b1be'
+    },
     webPreferences: {
       
       // Use pluginOptions.nodeIntegration, leave this alone
